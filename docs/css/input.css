@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* 1. Declaramos las fuentes físicas */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 800; /* Rango para fuente variable */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* 2. Registramos la fuente en el tema de Tailwind v4 */
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Ya que estamos, podemos personalizar los colores corporativos aquí */
+  --color-orbis-green: #059669; /* emerald-600 */
+  --color-orbis-blue: #2563eb;  /* blue-600 */
+}
